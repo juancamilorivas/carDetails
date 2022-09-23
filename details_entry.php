@@ -4,12 +4,12 @@ $username="root";
 $password="";
 $database_name="consesionario";
 
-//crear conexion
+//crear coneccion
 $conn=mysqli_connect($server_name,$username,$password,$database_name);
 
 if (!$conn)
 {
-		die("conecion fallida:" . mysqli_connect_error());
+		die("coneccion fallida:" . mysqli_connect_error());
 }
 
 if(isset($_POST['save']))
